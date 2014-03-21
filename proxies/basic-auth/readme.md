@@ -7,7 +7,7 @@ This proxy enforces basic authorization.
 3. Use the app's consumer key and secret as user/pass when making the http request.
 
 ##### How it works
-The proxy uses four policies:
+
 1. Extract variables to pull out the base64 encoded auth header
 2. Python policy to extract the username and password from the header
 3. AccessEntity policy to look up app details based on the extracted username
