@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="basic-auth">
+    <ConfigurationVersion minorVersion="0" majorVersion="4"/>
+    <CreatedAt>1395374716485</CreatedAt>
+    <CreatedBy>carlos@apigee.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>basic-auth</DisplayName>
+    <LastModifiedAt>1395374716485</LastModifiedAt>
+    <LastModifiedBy>carlos@apigee.com</LastModifiedBy>
+    <Policies>
+        <Policy>authfailed</Policy>
+        <Policy>b64decode</Policy>
+        <Policy>getappinfo</Policy>
+        <Policy>getauthheader</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>py://b64.py</Resource>
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints/>
+    <validate>false</validate>
+</APIProxy>
