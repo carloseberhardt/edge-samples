@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="301tossl">
+    <DisplayName>301toSSL</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers>
+              <Header name="Location">https://{request.header.host}{request.uri}</Header>
+          </Headers>
+            <Payload contentType="text/plain">SSL Required.
+</Payload>
+            <StatusCode>301</StatusCode>
+            <ReasonPhrase>Moved Permanently</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

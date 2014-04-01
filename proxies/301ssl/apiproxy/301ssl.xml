@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="301ssl">
+    <ConfigurationVersion minorVersion="0" majorVersion="4"/>
+    <CreatedAt>1396316795044</CreatedAt>
+    <CreatedBy>carlos@apigee.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>301ssl</DisplayName>
+    <LastModifiedAt>1396316795044</LastModifiedAt>
+    <LastModifiedBy>carlos@apigee.com</LastModifiedBy>
+    <Policies>
+        <Policy>301tossl</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>node://hello-world.js</Resource>
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>
